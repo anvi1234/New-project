@@ -1,0 +1,32 @@
+<div [ngClass]="'topnav2'">
+    <div [ngClass]="'column-vestigio2'">
+        <h1 style="text-align:left;float:left;color: #DB7093;font-size:35px;"><b>{{h1}}</b></h1> 
+            <h2 style="text-align:left;float:left;color:#FF7F50;font-size:35px"><b>{{h2}}</b></h2>
+            <h3 style="text-align:left;float:left;color:#368BC1;font-size:35px"><b>{{h3}}</b></h3>
+            
+        </div>
+        </div>
+        <div [ngClass]="'column-grey'">
+               <form [ngClass]="'form-color'" name="form" #f="ngForm" (ngSubmit)="f.valid&&login()" >
+                   <label id="register">Log in with your email</label><br>
+                        <label ><b>Email address</b></label><br>
+                   <input type="text" [ngModel]="" name="email" #email="ngModel" [ngClass]="{'is-invalid':f.submitted && email.invalid}"   required email><br>
+                       <div *ngIf="f.submitted && email.invalid">
+                        <br><div  id="errors"*ngIf="email.errors.required">*Email is required*</div>
+                        <div id="errors"*ngIf="email.errors.email">*Email must be a valid email address*</div>
+                        </div>
+                   
+                   
+                        <label><b>Password</b></label><br>
+                   <input type="password"[ngModel]="" name="password" #password="ngModel" [ngClass]="{'is-invalid':f.submitted && password.invalid}"  required minlength="6"><br>
+                         <div  *ngIf="f.submitted&&password.invalid">
+                             <br><div id="errors" *ngIf="password.errors.required">*Password is required*</div>
+                              <div id="errors" *ngIf="password.errors.minlength">*Password must be at least 6 character*</div>
+                         </div>
+
+
+
+                   <button type="submit"><b>Log in</b></button><br>
+                   <div id="policy"><p>Don't have an account <a href="#">Sign Up</a></p></div>
+               </form>
+        </div>

@@ -1,0 +1,38 @@
+
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+    <mat-toolbar>
+      <h1 style="text-align:left;float:left;color: #DB7093;font-size:35px;"><b>{{h1}}</b></h1> 
+                <h2 style="text-align:left;float:left;color:#FF7F50;font-size:35px"><b>{{h2}}</b></h2>
+                <h3 style="text-align:left;float:left;color:#368BC1;font-size:35px"><b>{{h3}}</b></h3>
+                
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink='./mydashboard'><i style='font-size:24px' class='fas'>&#xf508;</i>&nbsp;&nbsp;User Profile</a>
+      <a mat-list-item href="#"><i style='font-size:24px' class='fas'>&#xf06a;</i>
+        &nbsp;&nbsp;Facility</a>
+      <a mat-list-item href="#"><i class="material-icons">&#xe7f1;</i>&nbsp;&nbsp;Location</a>
+      <a mat-list-item href="#"><i class="material-icons">&#xe432;</i>&nbsp;&nbsp;Gallery</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar >
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Dashboard</span>
+    </mat-toolbar>
+   <ng-content></ng-content>
+  </mat-sidenav-content>
+ 
+</mat-sidenav-container>
+<router-outlet></router-outlet>

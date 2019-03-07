@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 120%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #DB7093;
+  padding: 5px;
+  height: 47px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #DB7093;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 90px;
+  height: 47px;
+  border: 1px solid #DB7093;
+  background: #DB7093;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 53%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+.vestigio-heading header h1,h2, h3{
+   
+  font-size: 150px;
+  font-weight: 5000;
+ top: 150px;
+  display:inline;
+position: relative;
+left: 590px;
+ font-family:Gill Sans Extrabold, sans-serif;
+}
+.vestigio-heading header h2, h3{
+   
+  font-size: 150px;
+  font-weight: 5000;
+ top: 150px;
+  display:inline;
+position: relative;
+left: 590px;
+ font-family:Gill Sans Extrabold, sans-serif;
+}
+.vestigio-heading header h3{
+   
+  font-size: 150px;
+  font-weight: 5000;
+ top: 150px;
+  display:inline;
+position: relative;
+left: 590px;
+ font-family:Gill Sans Extrabold, sans-serif;
+}
+
+.paragraph p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #696969;
+  position: relative;
+  left:500px;
+  top:155px;
+ 
+}
+#p2{
+  position:relative;
+  top:130px;
+ right:20px;
+ text-align: center;
+ left:40px;
+}
+.nav a{
+  position: relative;
+  left:1000px;
+  top:6px;
+  color: black;
+}
+
+#image{
+  position: relative;
+  bottom:140px;
+}
+.topnav2 {
+  background-color:white;
+  overflow: hidden;
+}
+
+.column-vestigio2 h1,h2,h3{
+  position: relative;
+  top:10px;
+}
+.column-vestigio2 h1{
+  position: relative;
+  left:590px;
+}
+.column-grey{
+   background-color: #DCDCDC;
+   height:800px;
+   width: 1380px;
+}
+.form-color{
+  background-color: white;
+  height:500px;
+  width:300px;
+  position: relative;
+  top:20px;
+  left:500px;
+}
+#register{
+  font-size: 18px;
+  position: relative;
+  top:20px;
+  left:14px;
+  color:#808080;
+}
+.form-color label{
+  font-size: 15px;
+  color:#696969;
+  position: relative;
+  left:14px;
+  top:30px;
+
+}
+.form-color input[type="text"],input[type="password"] {
+ position: relative;
+ left:14px;
+ height: 40px;
+ width:275px;
+ top:25px;
+}
+
+.form-color button{
+  height: 50px;
+  width:280px;
+  background-color:#DB7093; 
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  left:10px;
+  top:78px;
+  border-bottom-color: beige;
+}
+#policy p{
+  font-size: 14px;
+  position: relative;
+  top:190px;
+  color:#808080;
+  left:13px;
+  
+}
+#errors{
+  font-size: 14px;
+  position: relative;
+  left:20px;
+  color:red;
+}

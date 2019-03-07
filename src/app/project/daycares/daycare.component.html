@@ -1,0 +1,580 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<div class="nav">
+    <nav>
+       <a [routerLink]="['./signup']">{{title1}}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a [routerLink]="['./login']">{{title2}}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a [routerLink]="['./daycareregisteration']">{{title3}}</a>
+    </nav>
+ </div>
+   
+ <div [ngClass]="'topnav2'">
+   <div [ngClass]="'column-vestigio2'">
+       <h1 style="text-align:left;float:left;color: #DB7093;font-size:35px;"><b>{{h1}}</b></h1> 
+           <h2 style="text-align:left;float:left;color:#FF7F50;font-size:35px"><b>{{h2}}</b></h2>
+           <h3 style="text-align:left;float:left;color:#368BC1;font-size:35px"><b>{{h3}}</b></h3>
+           
+       </div>
+ </div>
+       <div [ngClass]="'column-darkgrey'">
+            <div class="wrap">
+                  <div class="search">
+                     <input type="text" class="searchTerm">
+                     <button type="submit" value="Search" class="searchButton">
+                        <b> Search</b>
+                    </button>
+                  </div>
+               </div>
+               <div [ngClass]="'column-grey'">
+              
+                     <div [ngClass]="'column-white'">
+                        <div [ngClass]="'image2'">
+                              <img src="/assets/image/dolphine/dolphine1.jpg" height="216px" width="220px" [ngClass]="'imagedaycare'" style="cursor:pointer">   </div>
+                            <a href="https://www.dolphinkids.in/"><h1 [ngClass]="'daycarename'"><strong>{{dolphinedaycarename}}</strong></h1></a><hr class="hr1">
+                            <i class="fa fa-map-marker" id="fa" style="font-size:20px"></i>
+                            <hr class="hr2">
+                 
+                   <h1 [ngClass]="'facility'"><strong>Facility</strong></h1>
+                      <ul [ngClass]="'list1'">
+                          <li class="list1" *ngFor="let list of dolphinefacility">&#8227;<strong>{{list}}</strong></li>
+                         </ul>
+
+                         <div class="dropdown">
+                                                                            
+                              <div [ngClass]="menuheader" data-toggle="dropdown"><b>photos</b><i  [ngClass]="'fa3'"class="fa fa-chevron-down"></i></div>
+                              <div class="dropdown-content" id="aaaaaa">
+                                    <nav [ngClass]="'nav2'"> 
+                                          <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                          <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </nav><hr>
+                     
+                              <div [ngClass]="'slider'" >
+                                 <ngb-carousel>
+                                    <ng-template ngbSlide  *ngFor="let item of  dolphineimageUrl" >
+                                          <img  class="image" [src]="item">
+                                    </ng-template>
+                                 </ngb-carousel>
+
+                             
+                               </div>
+                              </div>
+                              </div>
+                            
+                        
+                 
+                         <div class="vertical">
+                              <p class='reviews'><b>Reviews</b></p>
+                                    </div>
+                       
+      
+                         <div class="dropdown">
+                              <div [ngClass]="headerbox" data-toggle="dropdown">Menu<i class="fa fa-chevron-down" [ngClass]="'fa2'"></i></div>
+                              <div [ngClass]="'dropdown-content'" id="aaaa">
+                                   <ul [ngClass]="'ul2'">
+                                         <li *ngFor="let item of extraillusionfacility">{{item}}</li>
+                                       </ul>
+                              </div>
+                           
+                             </div>
+             <div class="dropdown">             
+                           <div [ngClass]="'location-menu'" data-toggle="dropdown">{{dolphinelocation}}<i  [ngClass]="'fa1'"class="fa fa-chevron-down"></i></div>
+                  
+                         <div  [ngClass]="'dropdown-content'" id="aaa">
+                      <nav [ngClass]="'nav2'">
+                       <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      
+                        <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr>
+                        <fieldset>
+                            <p [ngClass]="'address'"> Ns 16, B Block, Gamma 1-Greater,Noida - 201310, <br>Opposite House Number B 49,<br> Near Jagat Farms,Through Gate Number 1<br>+919811029884</p></fieldset>
+                  
+               </nav>
+                </div>
+                </div>
+              
+            </div><br>
+            <div [ngClass]="'column-white'">
+                  <div [ngClass]="'image2'">
+                        <img src="/assets/image/littlemillennium.jpeg" height="216px" width="220px"  style="cursor:pointer">   </div>
+                      <a href="https://www.littlemillennium.com/"><h1 [ngClass]="'daycarename'"><strong>{{milleniumdaycarename}}</strong></h1></a><hr class="hr1">
+                      <i class="fa fa-map-marker" id="fa" style="font-size:20px"></i>
+                      <hr class="hr2">
+                      <h1 [ngClass]="'facility'"><strong>Facility</strong></h1>
+                      <ul [ngClass]="'list1'">
+                          <li class="list1" *ngFor="let list of milleniumfacility">&#8227;<strong>{{list}}</strong></li>
+                         </ul>
+                        
+                              <div class="dropdown">
+                                                                            
+                                    <div [ngClass]="menuheader" data-toggle="dropdown"><b>photos</b><i  [ngClass]="'fa3'"class="fa fa-chevron-down"></i></div>
+                                    <div class="dropdown-content" id="aaaaaa">
+                                          <nav [ngClass]="'nav2'"> 
+                                                <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                          </nav><hr>
+                           
+                                    <div [ngClass]="'slider'" >
+                                       <ngb-carousel>
+                                          <ng-template ngbSlide  *ngFor="let item of  millimagesUrl" >
+                                                <img  class="image" [src]="item">
+                                          </ng-template>
+                                       </ngb-carousel>
+      
+                                   
+                                     </div>
+                                    </div>
+                                    </div>
+                        
+                         <div class="vertical">
+                              <p class='reviews'><b>Reviews</b></p>
+                                    </div>
+     
+                                    <div class="dropdown">
+                                          <div [ngClass]="headerbox" data-toggle="dropdown">Menu<i class="fa fa-chevron-down" [ngClass]="'fa2'"></i></div>
+                                          <div [ngClass]="'dropdown-content'" id="aaaa">
+                                               <ul [ngClass]="'ul2'">
+                                                     <li *ngFor="let item of extramilleniumfacility">{{item}}</li>
+                                                   </ul>
+                                          </div>
+                                       
+                                         </div>
+            
+                                        
+          
+                                    
+                                       <div class="dropdown">             
+                                       <div [ngClass]="'location-menu'" data-toggle="dropdown">{{milleniumlocation}}<i  [ngClass]="'fa1'"class="fa fa-chevron-down"></i></div>
+                              
+                                     <div  [ngClass]="'dropdown-content'" id="aaa">
+                                  <nav [ngClass]="'nav2'">
+                                   <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 
+                                    <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr>
+                                    <fieldset>
+                                        <p [ngClass]="'address'">  Liitle Millennium Pre-School,<br>
+                                          NS-86,Chi-IV<br>
+                                        Near ATS Pardiso Society,Greater Noida,<br>
+                                         +91-7042427842</p></fieldset>
+                              
+                           </nav>
+                            </div>
+                            </div>
+                          
+                            </div><br>
+                            <div [ngClass]="'column-white'">
+                              <div [ngClass]="'image2'">
+                                    <img src="/assets/image/illusion/illusion.jpg" height="216px" width="220px"  style="cursor:pointer">   </div>
+                                  <a href="http://www.littleillusionspreschool.com/"><h1 [ngClass]="'daycarename'"><strong>{{illusiondaycarename}}</strong></h1></a><hr class="hr1">
+                                  <i class="fa fa-map-marker" id="fa" style="font-size:20px"></i>
+                                  <hr class="hr2">
+                                  <h1 [ngClass]="'facility'"><strong>Facility</strong></h1>
+                                  <ul [ngClass]="'list1'">
+                                      <li class="list1" *ngFor="let list of illusionfacility">&#8227;<strong>{{list}}</strong></li>
+                                     </ul>
+                                     <div class="dropdown">
+                                                                            
+                                          <div [ngClass]="menuheader" data-toggle="dropdown"><b>photos</b><i  [ngClass]="'fa3'"class="fa fa-chevron-down"></i></div>
+                                          <div class="dropdown-content" id="aaaaaa">
+                                                <nav [ngClass]="'nav2'"> 
+                                                      <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                      <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </nav><hr>
+                                 
+                                          <div [ngClass]="'slider'" >
+                                             <ngb-carousel>
+                                                <ng-template ngbSlide  *ngFor="let item of  illusionimageUrl" >
+                                                      <img  class="image" [src]="item">
+                                                </ng-template>
+                                             </ngb-carousel>
+            
+                                         
+                                           </div>
+                                          </div>
+                                          </div>
+                                     <div class="vertical">
+                                          <p class='reviews'><b>Reviews</b></p>
+                                                </div>
+                 
+                                                <div class="dropdown">
+                                                      <div [ngClass]="headerbox" data-toggle="dropdown">Menu<i class="fa fa-chevron-down" [ngClass]="'fa2'"></i></div>
+                                                      <div [ngClass]="'dropdown-content'" id="aaaa">
+                                                           <ul [ngClass]="'ul2'">
+                                                                 <li *ngFor="let item of extraillusionfacility">{{item}}</li>
+                                                               </ul>
+                                                      </div>
+                                                   
+                                                     </div>
+                        
+                                                    
+                                                
+                                                   <div class="dropdown">             
+                                                   <div [ngClass]="'location-menu'" data-toggle="dropdown">{{illusionlocation}}<i  [ngClass]="'fa1'"class="fa fa-chevron-down"></i></div>
+                                          
+                                                 <div  [ngClass]="'dropdown-content'" id="aaa">
+                                              <nav [ngClass]="'nav2'">
+                                               <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr>
+                                                <fieldset>
+                                                    <p [ngClass]="'address'"> <p [ngClass]="'address'">  Ns A 07, Pocket 5, 0,<br>Greater, Noida - 201310, Opposite <br>Icon Apartments, Near Sector Chi II<br>+919910083210,+919990602387</p></fieldset>
+                                       </nav>
+                                        </div>
+                                        </div>
+                                      
+                                        </div><br>
+                      
+                      
+                                        <div [ngClass]="'column-white'">
+                                          <div [ngClass]="'image2'">
+                                                <img src="/assets/image/kingdom/kingdom.JPG" height="216px" width="220px"  style="cursor:pointer">   </div>
+                                              <a href="https://kidskingdomdelhigreaternoida.justdial.com/"><h1 [ngClass]="'daycarename'"><strong>{{kingdomdaycarename}}</strong></h1></a><hr class="hr1">
+                                              <i class="fa fa-map-marker" id="fa" style="font-size:20px"></i>
+                                              <hr class="hr2">
+                                              <h1 [ngClass]="'facility'"><strong>Facility</strong></h1>
+                                              <ul [ngClass]="'list1'">
+                                                  <li class="list1" *ngFor="let list of kingdomfacility">&#8227;<strong>{{list}}</strong></li>
+                                                 </ul>
+                                                 <div class="dropdown">
+                                                                            
+                                                      <div [ngClass]="menuheader" data-toggle="dropdown"><b>photos</b><i  [ngClass]="'fa3'"class="fa fa-chevron-down"></i></div>
+                                                      <div class="dropdown-content" id="aaaaaa">
+                                                            <nav [ngClass]="'nav2'"> 
+                                                                  <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                  <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </nav><hr>
+                                             
+                                                      <div [ngClass]="'slider'" >
+                                                         <ngb-carousel>
+                                                            <ng-template ngbSlide  *ngFor="let item of  kingdomimageUrl" >
+                                                                  <img  class="image" [src]="item">
+                                                            </ng-template>
+                                                         </ngb-carousel>
+                        
+                                                     
+                                                       </div>
+                                                      </div>
+                                                      </div>
+                                                 <div class="vertical">
+                                                      <p class='reviews'><b>Reviews</b></p>
+                                                            </div>
+                             
+                                                            <div class="dropdown">
+                                                                  <div [ngClass]="headerbox" data-toggle="dropdown">Menu<i class="fa fa-chevron-down" [ngClass]="'fa2'"></i></div>
+                                                                  <div [ngClass]="'dropdown-content'" id="aaaa">
+                                                                       <ul [ngClass]="'ul2'">
+                                                                             <li *ngFor="let item of extrakingdomfacility">{{item}}</li>
+                                                                           </ul>
+                                                                  </div>
+                                                               
+                                                                 </div>
+                                    
+                                                                
+                                                            
+                                                               <div class="dropdown">             
+                                                               <div [ngClass]="'location-menu'" data-toggle="dropdown">{{kingdomlocation}}<i  [ngClass]="'fa1'"class="fa fa-chevron-down"></i></div>
+                                                      
+                                                             <div  [ngClass]="'dropdown-content'" id="aaa">
+                                                          <nav [ngClass]="'nav2'">
+                                                           <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                            <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr>
+                                                            <fieldset>
+                                                                <p [ngClass]="'address'"> ns 12 g block,near <br>kumar hospital,<br>beta 2, Greater Noida, <br>Delhi, Delhi 201310<br>7017083205
+                                                                  9871144031</p></fieldset>
+                                                      
+                                                   </nav>
+                                                    </div>
+                                                    </div>
+                                                  
+                                                    </div><br>
+                                  
+                                                    <div [ngClass]="'column-white'">
+                                                      <div [ngClass]="'image2'">
+                                                            <img src="/assets/image/mmi/mmi.jpg" height="216px" width="220px"  style="cursor:pointer">   </div>
+                                                          <a href="https://mmigreaternoida.justdial.com/  "><h1 [ngClass]="'daycarename'"><strong>{{mmidaycarename}}</strong></h1></a><hr class="hr1">
+                                                          <i class="fa fa-map-marker" id="fa" style="font-size:20px"></i>
+                                                          <hr class="hr2">
+                                                          <h1 [ngClass]="'facility'"><strong>Facility</strong></h1>
+                                                          <ul [ngClass]="'list1'">
+                                                              <li class="list1" *ngFor="let list of mmifacility">&#8227;<strong>{{list}}</strong></li>
+                                                             </ul>
+                                                             <div class="dropdown">
+                                                                            
+                                                                  <div [ngClass]="menuheader" data-toggle="dropdown"><b>photos</b><i  [ngClass]="'fa3'"class="fa fa-chevron-down"></i></div>
+                                                                  <div class="dropdown-content" id="aaaaaa">
+                                                                        <nav [ngClass]="'nav2'"> 
+                                                                              <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                              <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                        </nav><hr>
+                                                         
+                                                                  <div [ngClass]="'slider'" >
+                                                                     <ngb-carousel>
+                                                                        <ng-template ngbSlide  *ngFor="let item of  mmiimageUrl" >
+                                                                              <img  class="image" [src]="item">
+                                                                        </ng-template>
+                                                                     </ngb-carousel>
+                                    
+                                                                 
+                                                                   </div>
+                                                                  </div>
+                                                                  </div>
+                                                             <div class="vertical">
+                                                                  <p class='reviews'><b>Reviews</b></p>
+                                                                        </div>
+                                         
+                                                                        <div class="dropdown">
+                                                                              <div [ngClass]="headerbox" data-toggle="dropdown">Menu<i class="fa fa-chevron-down" [ngClass]="'fa2'"></i></div>
+                                                                              <div [ngClass]="'dropdown-content'" id="aaaa">
+                                                                                   <ul [ngClass]="'ul2'">
+                                                                                         <li *ngFor="let item of extrammifacility">{{item}}</li>
+                                                                                       </ul>
+                                                                              </div>
+                                                                           
+                                                                             </div>
+                                                                                  <div class="dropdown">             
+                                                                           <div [ngClass]="'location-menu'" data-toggle="dropdown">{{mmilocation}}<i  [ngClass]="'fa1'"class="fa fa-chevron-down"></i></div>
+                                                                  
+                                                                         <div  [ngClass]="'dropdown-content'" id="aaa">
+                                                                      <nav [ngClass]="'nav2'">
+                                                                       <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    
+                                                                        <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr>
+                                                                        <fieldset>
+                                                                            <p [ngClass]="'address'">  Modern Montessori International,<br>NS Plot, Greater Noida, Noida, <br>Uttar Pradesh 201310<br>+91-9773597876
+                                                                              +91-9773597877</p></fieldset>
+                                                                   
+                                                                  
+                                                               </nav>
+                                                                </div>
+                                                                </div>
+                                                              
+                                                                </div><br>
+                                              
+       <div [ngClass]="'column-white'">
+            <div [ngClass]="'image2'">
+                  <img src="/assets/image/pride/pride.jpg" height="216px" width="220px"  style="cursor:pointer">   </div>
+                <a href="https://www.motherspridepreschool.com/"><h1 [ngClass]="'daycarename'"><strong>{{pridedaycarename}}</strong></h1></a><hr class="hr1">
+                <i class="fa fa-map-marker" id="fa" style="font-size:20px"></i>
+                <hr class="hr2">
+                <h1 [ngClass]="'facility'"><strong>Facility</strong></h1>
+                <ul [ngClass]="'list1'">
+                    <li class="list1" *ngFor="let list of pridefacility">&#8227;<strong>{{list}}</strong></li>
+                   </ul>
+                   <div class="dropdown">
+                                  
+                        <div [ngClass]="menuheader" data-toggle="dropdown"><b>photos</b><i  [ngClass]="'fa3'"class="fa fa-chevron-down"></i></div>
+                        <div class="dropdown-content" id="aaaaaa">
+                              <nav [ngClass]="'nav2'"> 
+                                    <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              </nav><hr>
+               
+                        <div [ngClass]="'slider'" >
+                           <ngb-carousel>
+                              <ng-template ngbSlide  *ngFor="let item of prideimageUrl" >
+                                    <img  class="image" [src]="item">
+                              </ng-template>
+                           </ngb-carousel>
+
+                       
+                         </div>
+                        </div>
+                        </div>
+                   <div class="vertical">
+                        <p class='reviews'><b>Reviews</b></p>
+                              </div>
+
+                              <div class="dropdown">
+                                    <div [ngClass]="headerbox" data-toggle="dropdown">Menu<i class="fa fa-chevron-down" [ngClass]="'fa2'"></i></div>
+                                    <div [ngClass]="'dropdown-content'" id="aaaa">
+                                         <ul [ngClass]="'ul2'">
+                                               <li *ngFor="let item of extrapridefacility">{{item}}</li>
+                                             </ul>
+                                    </div>
+                                 
+                                   </div>
+
+
+                                                           
+                                  
+                                  
+                                  
+                                  
+                                  
+    
+                              
+                                 <div class="dropdown">             
+                                 <div [ngClass]="'location-menu'" data-toggle="dropdown">{{pridelocation}}<i  [ngClass]="'fa1'"class="fa fa-chevron-down"></i></div>
+                        
+                               <div  [ngClass]="'dropdown-content'" id="aaa">
+                            <nav [ngClass]="'nav2'">
+                             <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          
+                              <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr>
+                              <fieldset>
+                                  <p [ngClass]="'address'">  Plot No. NS-32 Pocket B Sector Swarn Nagri,<br> Greater Noida,<br> Greater, Noida - 201310, <br>Near Life Line Krishna Hospital<br>+91 11 4508 1111</p></fieldset>
+                         
+                        
+                     </nav>
+                      </div>
+                      </div>
+                     </div><br>
+                      <div [ngClass]="'column-white'">
+                        <div [ngClass]="'image2'">
+                              <img src="/assets/image/cambridge/cam.jpg" height="216px" width="220px"  style="cursor:pointer">   </div>
+                            <a href="https://cambridgemontessoriglobal.org/"><h1 [ngClass]="'daycarename'"><strong>{{cambridgedaycarename}}</strong></h1></a><hr class="hr1">
+                            <i class="fa fa-map-marker" id="fa" style="font-size:20px"></i>
+                            <hr class="hr2">
+                            <h1 [ngClass]="'facility'"><strong>Facility</strong></h1>
+                            <ul [ngClass]="'list1'">
+                                <li class="list1" *ngFor="let list of cambridgefacility">&#8227;<strong>{{list}}</strong></li>
+                               </ul>
+                               <div class="dropdown">
+                                              
+                                    <div [ngClass]="menuheader" data-toggle="dropdown"><b>photos</b><i  [ngClass]="'fa3'"class="fa fa-chevron-down"></i></div>
+                                    <div class="dropdown-content" id="aaaaaa">
+                                          <nav [ngClass]="'nav2'"> 
+                                                <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                          </nav><hr>
+                           
+                                    <div [ngClass]="'slider'" >
+                                       <ngb-carousel>
+                                          <ng-template ngbSlide  *ngFor="let item of cambridgeimageUrl" >
+                                                <img  class="image" [src]="item">
+                                          </ng-template>
+                                       </ngb-carousel>
+            
+                                   
+                                     </div>
+                                    </div>
+                                    </div>
+                               <div class="vertical">
+                                    <p class='reviews'><b>Reviews</b></p>
+                                          </div>
+            
+                                          <div class="dropdown">
+                                                <div [ngClass]="headerbox" data-toggle="dropdown">Menu<i class="fa fa-chevron-down" [ngClass]="'fa2'"></i></div>
+                                                <div [ngClass]="'dropdown-content'" id="aaaa">
+                                                     <ul [ngClass]="'ul2'">
+                                                           <li *ngFor="let item of extracambridgefacility">{{item}}</li>
+                                                         </ul>
+                                                </div>
+                                             
+                                               </div>
+                                        <div class="dropdown">             
+                                             <div [ngClass]="'location-menu'" data-toggle="dropdown">{{cambridgelocation}}<i  [ngClass]="'fa1'"class="fa fa-chevron-down"></i></div>
+                                    
+                                           <div  [ngClass]="'dropdown-content'" id="aaa">
+                                        <nav [ngClass]="'nav2'">
+                                         <a class="link-3" href="#"><b>{{title4}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      
+                                          <a class="link-3" href="#"><b>{{title7}}</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr>
+                                          <fieldset>
+                                              <p [ngClass]="'address'">  B-110, Alpha 1-Greater, <br>Noida - 201310, +91 901 576 4000</p></fieldset>
+                                     
+                                    
+                                 </nav>
+                                  </div>
+                                  </div>
+                                
+                                  </div><br>
+                              
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
+           
+
+              
+

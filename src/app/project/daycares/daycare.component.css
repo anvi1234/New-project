@@ -1,0 +1,619 @@
+
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700');
+  @media screen and (min-width: 480px){
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+   
+   *{
+     margin:0px;
+     padding:0px;
+
+   }  
+    
+  .nav a{
+    position: relative;
+    left:1000px;
+    color:black;
+    top:10px;
+  }
+  .nav2 .location-header .link-3{
+    color:gray;
+    position: relative;
+    left:-300px;
+    top:-343px;
+    padding-right:10px;
+  }
+  .nav2 .review-header .link-3{
+    position: relative;
+    bottom:22px;
+    left:240px;
+
+  }
+  #hr3{
+    position: relative;
+    top:-28px;
+  }
+  .column-vestigio2 h1,h2,h3{
+    position: relative;
+    bottom:15px;
+  }
+  .column-vestigio2 h1,h2,h3{
+    position: relative;
+    left:590px;
+  }
+  .column-darkgrey{
+    background-color:#EEEEEE;
+    height:150px;
+    width: 1380px;
+    position: relative;
+    top:28px;
+ }
+ .search {
+  width: 220%;
+  position: relative;
+  right:245px;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #DB7093;
+  padding: 5px;
+  height: 47px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #DB7093;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 160px;
+  height: 47px;
+  border: 1px solid #DB7093;
+  background: #DB7093;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 36%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+.column-grey{
+  background-color:#E5E5E5;
+  height:2050px;
+  width: 1380px;
+  position: relative;
+  top:148px;
+}
+#white{
+  background-color: white;
+  height:220px;
+  width:950px;
+  left:80px;
+  position: relative;
+
+}
+  
+
+.imagedaycare{
+  position: relative;
+  right:130px;
+  top:2px;
+  bottom:2px;
+
+}
+.image{
+  position: relative;
+  top:2px;
+  bottom:2px;
+  background-color: white;
+  left:-100px;
+  height:300px;
+  width:500px;
+
+}
+
+.daycarename{
+  font-size: 20px;
+   color:#2B547E;
+   position: relative;
+   bottom:200px;
+   left:240px;
+}
+.hr1{
+  position: relative;
+  bottom:180px;
+  width:440px;
+  right:-240px;
+
+}
+#fa{
+  position: relative;
+  top:-168px;
+  left:250px;
+  color:grey;
+}
+
+ select{
+  height:40px;
+  width:480px;
+  background-color: white;
+  color:gray;
+  border:0px;
+  position: relative;
+  bottom:200px;
+  left:370px
+}
+
+
+.location:after {
+    content: '\f078';
+    font: normal normal normal 17px/1 FontAwesome;
+    color:gray;
+   right: -360px;
+    bottom: 160px;
+    height: 34px;
+    padding: 15px 0px 0px 8px;
+    border:none;
+    position: absolute;
+    
+}
+.location select:hover{
+  background-color:#DCDCDC;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+display: none;
+}
+select:focus{
+  border-color: gray;
+  outline:none;
+}
+
+.location:hover{
+  color:gray;
+}
+
+.fa1{
+  position: relative;
+  left:30px;
+  color:gray;
+  bottom:3px;
+  
+}
+.hr2{
+  position: relative;
+  bottom:160px;
+  width:440px;
+  right:-240px;
+
+
+}
+
+.daycarelink1{
+  position: relative;
+  left:280px;
+  color:gray;
+  bottom:200px;
+
+}
+.vertical {
+  border-left: 1px solid#EEEEEE;
+  height: 150px;
+  position:absolute;
+  bottom:50px;
+  left:690px;
+}
+
+.reviews{
+  color:#2B547E;
+position: relative;
+left:10px;
+}
+
+.image3{
+  height:20px;
+  width:80px;
+  background-color:black;
+  opacity: 0.8;
+  color:white;
+  font-size: 10px;
+  position: relative;
+  top:90px;
+  left:-210px;
+
+}
+.column-white{
+  background-color: white;
+  height:220px;
+  width:950px;
+  position: relative;;
+  top:10px;
+  left:200px;
+  color:black;
+}
+
+.nav2 a{
+  color:gray;
+  position: relative;
+  left:20px;
+  padding-left:20px;
+}
+.nav2 a:hover{
+  color:black;
+}
+
+.mySlides {display:none;}
+.menu-header{
+  color:white;
+  background-color:black;
+  width:60px;
+ 
+  bottom:120px;
+  position: relative;;
+  left:160px;
+  font-size: 10px;
+  cursor: pointer;
+  
+ 
+  
+  
+}
+
+
+.fa3{
+  position: relative;
+  top:1px;
+  color:white;
+  left:20px;
+}
+li {
+  margin-bottom: 10px;
+}
+
+.link-3 {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.link-3::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background:#DB7093;
+  transition: width .3s;
+}
+
+.link-3:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+.slider{
+  
+  position: relative;
+ bottom:-24px;
+  left:280px;
+}
+.image1{
+  height:300px;
+  width:400px;
+  position: relative;
+  bottom:20px;
+}
+span:focus {
+  outline: none;
+  border: 0;
+}
+
+:focus {outline:none;}
+.facility{
+  font-size:19px;
+  color:#2B547E;
+  position: relative;
+  bottom:140px;
+ left:240px;
+}
+ul .list1{
+  font-size: 11px;
+  position: relative;
+  bottom:120px;
+  left:240px;
+  display: inline;
+  margin-right:10px;
+  color:gray;
+}
+ ul .list1:hover{
+   color:black;
+ }
+.list1:hover{
+  color:black;
+}
+
+.header-box{
+  font-size:14px;
+  position:absolute;
+  bottom:90px;
+  left:630px;
+  color:blue;
+  cursor: pointer;
+}
+.fa2{
+  position: relative;
+  bottom:19px;
+  left:50px;
+  font-size: 10px;
+  color:blue;
+
+}
+
+
+
+
+.location-header {
+  position: absolute;
+  /*Don't really need this just for demo styling*/
+  color:gray;
+ right:10px;
+  min-width: 200px;
+  margin: 50px 33%;
+  bottom:90px;
+  
+}
+
+
+.location-header:hover{
+ color:black;
+
+
+  
+}
+.dropdown-container{
+  
+  display:none;
+  position: absolute;
+  background-color:white;
+}
+
+
+.dropdown-content {
+  display:none;
+  position: absolute;
+  z-index: 1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+ background-color: white;
+
+  top:-50px;
+
+}
+
+
+.dropdown-container {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-cont{
+  display: none;
+  position: relative;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  width:250px;
+  height:300px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ 
+.dropdown-menu {
+ 
+  
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  display:none;
+  top:-50px;
+
+   
+  
+}
+.menu-container {
+
+  display:none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  width:950px;
+  height:500px;
+  top:240px;
+}
+.menu-container {
+
+  display:none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  width:950px;
+  height:500px;
+  top:240px;
+}
+.ul2 li{
+  font-size: 14px;
+  position: relative;
+  left:16px;
+
+}
+.address{
+  position:absolute;
+  left:350px;
+  top:100px;
+  color:black;
+  border:darkblue;
+}
+p.address{
+  border-style:groove;
+
+  border-width:3px;
+  
+}
+
+/*second daycare*/
+
+
+
+ #aaa {
+  width: 950px !important;
+    height: 500px !important;
+    top:-80px!important;
+    left:-60px;
+   
+  
+   
+}
+#aaaa{
+  width: 350px !important;
+  height: 200px !important;
+  left:600px;
+  top:-80px!important;
+  background-color: white;
+  
+  
+
+}
+#aaaaa{
+  width: 950px !important;
+  height: 500px !important;
+  top:240px!important;
+ 
+
+}
+#aaaaaa{
+  width: 950px !important;
+  height: 500px !important;
+  top:-80px;
+  background-color: white;
+ 
+  left:-2px;
+
+}
+.menu-container1{
+display:none;
+  position:relative;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  width:950px;
+  height:500px;
+  top:800px;
+ 
+}
+.location-header{
+opacity:0%;
+background: white;
+position: relative;;
+border: 1px solid #DFDFDF;
+border-radius: 6px;
+padding: 8px 0 12px;
+margin-top: -10px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+max-width: 950px;
+height: 500px;
+margin: auto;
+transition: all .25s ease-in-out;
+right:1px;
+display:none;
+top:-90px;
+z-index:1;
+}
+.location-menu {
+ color:gray;
+ position: relative;
+ top:-240px;
+ left:250px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.header {
+  position: relative;
+  display: inline-block;
+}
+.header-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.saheader{
+color:gray;
+ position: relative;
+ top:-8px;
+ left:360px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+ 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  }
