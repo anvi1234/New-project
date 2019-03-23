@@ -7,10 +7,10 @@
         </div>
         </div>
         <div [ngClass]="'column-grey'">
-               <form [ngClass]="'form-color'"  name="form" #f="ngForm" (onSubmit)="f.valid&&signup()">
+               <form [ngClass]="'form-color'"  name="form" #f="ngForm" (ngSubmit)="f.valid&&saveData()">
                    <label id="register">Register with your email</label><br>
                    <label ><b>Email address*</b></label><br>
-                   <input type="text" name="email" [ngModel]=""  #email="ngModel" [ngClass]="{'is-invalid':f.submitted && email.invalid}" required email><br>
+                   <input type="text" name="email" [(ngModel)]="User.email"  #email="ngModel" [ngClass]="{'is-invalid':f.submitted && email.invalid}" required email><br>
                         <div *ngIf="f.submitted&&email.invalid">
                             <br><div id="errors" *ngIf="email.errors.required">*Email is Required*</div>
                             <div id="errors"*ngIf="email.errors.email">*Email must be valid*</div>
@@ -18,14 +18,14 @@
                 
 
                    <label><b>Password</b></label><br>
-                   <input type="password" name="password"[ngModel]=""  #password="ngModel" [ngClass]="{'is-invalid':f.submitted&&password.invalid}" required minlength="6"><br>
+                   <input type="password" name="password"[(ngModel)]="User.password"  #password="ngModel" [ngClass]="{'is-invalid':f.submitted&&password.invalid}" required minlength="6"><br>
                        <div *ngIf="f.submitted&&password.invalid">
                            
                         <br><div id="errors" *ngIf="password.errors.required">*Password is required*</div>
                         <div id="errors" *ngIf="password.errors.minlength">*Password must be at least 6 character*</div>
                        </div>
 
-                   <button type="submit"><b>Register</b></button><br>
+                   <button type="submit" value="submit"><b>Register</b></button><br>
                    <div id="policy"><p>Reminder: by signing up, you are agreeing  our <a href="#">Privacy Policy</a> and <a href="#">Terms of Use.</a></p></div>
                </form>
         </div>

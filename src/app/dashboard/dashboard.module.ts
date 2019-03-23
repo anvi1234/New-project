@@ -1,102 +1,44 @@
 import {NgModule} from "@angular/core";
-import{RouterModule} from "@angular/router";
+import {Routes,RouterModule} from "@angular/router";
 
-import{NavComponent} from "./nav.component";
-import{StartComponent} from "./start.component";
-import{Routes} from "@angular/router";
-import{CommonModule} from "@angular/common";
-import {MatButtonModule} from '@angular/material/button';
-import { MynavComponent } from './mynav/mynav.component';
+
+import { CdkTableModule } from '@angular/cdk/table';
+import { MatIconModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatToolbarModule, MatSidenavModule, MatListModule, MatStepperModule, MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonToggleModule, MatCardModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatDividerModule, MatExpansionModule, MatGridListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatTableModule, MatTabsModule, MatTooltipModule, MatTreeModule } from '@angular/material';
+import { CommonModule } from '@angular/common';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatStepperModule,MatToolbarModule,MatFormFieldModule, MatInputModule, MatSidenavModule,MatCheckboxModule, MatIconModule, MatListModule } from '@angular/material';
-
-
-import {A11yModule} from '@angular/cdk/a11y';
+import { A11yModule } from '@angular/cdk/a11y';
+import { CdkStepperModule } from '@angular/cdk/stepper';
+import { CdkTreeModule } from '@angular/cdk/tree';
 import {DragDropModule} from '@angular/cdk/drag-drop';
-import {ScrollingModule} from '@angular/cdk/scrolling';
-import {CdkStepperModule} from '@angular/cdk/stepper';
-import {CdkTableModule} from '@angular/cdk/table';
-import {CdkTreeModule} from '@angular/cdk/tree';
-import {FormsModule,ReactiveFormsModule} from "@angular/forms";
-
-import {
-  MatAutocompleteModule,
-  MatBadgeModule,
-  MatBottomSheetModule,
- 
-  MatButtonToggleModule,
-  MatCardModule,
- 
-  MatChipsModule,
-  MatDatepickerModule,
-  MatDialogModule,
-  MatDividerModule,
-  MatExpansionModule,
-  MatGridListModule,
-  
-  MatMenuModule, MatNativeDateModule,
-  MatPaginatorModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatRadioModule,
-  MatRippleModule,
-  MatSelectModule,
- 
-  MatSliderModule,
-  MatSlideToggleModule,
-  MatSnackBarModule,
-  MatSortModule,
-  MatTableModule,
-  MatTabsModule,
-
-  MatTooltipModule,
-  MatTreeModule,
-} from '@angular/material';
-import { MydashboardComponent } from './mydashboard/mydashboard.component';
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { MynavComponent } from '../dashboard/mynav/mynav.component';
+import { UserProfileComponent } from '../dashboard/userprofile/userprofile.component';
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { StartComponent } from "day-care/src/app/project/router/start.component";
 
 
 
 const routes:Routes=[
-    {path:"",component: MynavComponent },
+    {
+      path:"",
+      component: MynavComponent,
+      children: [
+        {path:"userprofile",component:UserProfileComponent }
+      ]
+    },
    
-    {path:"mydashboard",component:MydashboardComponent },
+    // {path:"mydashboard",component:MydashboardComponent },
     
 ]
 
 
- @NgModule({
-    declarations:[StartComponent,NavComponent, MynavComponent, MydashboardComponent],
-    imports:[RouterModule.forChild(routes),MatButtonModule,
-        MatIconModule,CommonModule,MatFormFieldModule, MatInputModule,LayoutModule,MatCheckboxModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule,MatStepperModule,A11yModule,DragDropModule,CdkStepperModule,
-        CdkTableModule,
-        CdkTreeModule,MatAutocompleteModule,FormsModule,ReactiveFormsModule,
-        MatBadgeModule,
-        MatBottomSheetModule,
+
+
+@NgModule({
+    imports:[MatStepperModule,MatIconModule,CommonModule,MatFormFieldModule, MatInputModule,LayoutModule,MatCheckboxModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule,MatStepperModule,A11yModule,DragDropModule,CdkStepperModule,
+        CdkTableModule, CdkTreeModule,MatAutocompleteModule, MatBadgeModule,RouterModule.forChild(routes),
+        MatBottomSheetModule,NgbModule,
        
         MatButtonToggleModule,
         MatCardModule,
@@ -124,9 +66,9 @@ const routes:Routes=[
         MatTabsModule,
       
         MatTooltipModule,
-        MatTreeModule,
-      ]
- })
- export class DashBoardModule{
+        MatTreeModule,],
+    declarations:[StartComponent,MynavComponent,UserProfileComponent]
+})
+export class DashboardModule{
 
- }
+}

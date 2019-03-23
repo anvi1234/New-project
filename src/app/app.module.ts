@@ -7,12 +7,14 @@ import{ApComponent} from "./app.component";
 
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MynavComponent } from './dashboard/mynav/mynav.component';
 
 
 
 @NgModule({
   declarations: [
     ApComponent,
+    MynavComponent,
    
    
     

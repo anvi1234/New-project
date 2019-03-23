@@ -22,8 +22,28 @@
 }
 .mat-nav-list a{
   padding-top:60px;
+  position: relative;
+
 
 }
+
 .mat-toolbar{
   box-shadow: 0px 1px 10px #999;
+}
+.mat-card{
+  height:600px;
+  width:600px;
+  left:1880px;
+  top: 680px;
+  position: relative;
+}
+.mat-form-field{
+  width:400px;
+ left: 2000px;
+  position: relative;
+}
+.mat-button{
+  position: relative;
+  left:-20px;
+  z-index:1;
 }

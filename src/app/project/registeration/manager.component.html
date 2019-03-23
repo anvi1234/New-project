@@ -1,110 +1,97 @@
 <div [ngClass]="'topnav'">
-        <div [ngClass]="'column-vestigio'">
-            <h1 style="text-align:left;float:left;color: #DB7093;font-size:35px;"><b>{{h1}}</b></h1> 
-                <h2 style="text-align:left;float:left;color:#FF7F50;font-size:35px"><b>{{h2}}</b></h2>
-                <h3 style="text-align:left;float:left;color:#368BC1;font-size:35px"><b>{{h3}}</b></h3>
-                
-            </div>
-            <div id="subheading">
-                <h6>{{title}}</h6>
-            </div>
-            <a [routerLink]="['/managerlogin']">{{link1}}</a>
-            <a [routerLink]="['/daycareregisteration']">{{link2}}</a>
-            <a href="#">{{link3}}</a>
-          </div>
-            
-                 
-        <div [ngClass]="'image3'">
-                <div [ngClass]="'division'">
-                        <div [ngClass]="'transparent'"></div>
-                        <p id="first"><b>Find your daycare on vestigio and create your</b></p>
-                            <p id="first1"><b>account for free </b></p><br>
-            <p id="second">You're one step away from managing your daycare on vesigio.Please Complete</p><p id="second1">the following fields to help us verify your identity.Your personal  detail is safe</p> <p id="second2">and won't shared.</p></div>
-                
-            
-            
-            
-            
-    <form  [ngClass]="'form'"  name="form" #f="ngForm" (ngSubmit)="f.valid&&login()">
-        <label><b>DayCare Name*</b></label><br>
-                <input type="text" name="coname"  [ngModel]="" #coname="ngModel" [ngClass]="{'f-invalid':f.submitted && coname.invalid}"   required><br>
+                <div [ngClass]="'column-vestigio'">
+                    <h1 style="text-align:left;float:left;color: #DB7093;font-size:35px;"><b>{{h1}}</b></h1> 
+                        <h2 style="text-align:left;float:left;color:#FF7F50;font-size:35px"><b>{{h2}}</b></h2>
+                        <h3 style="text-align:left;float:left;color:#368BC1;font-size:35px"><b>{{h3}}</b></h3>
                         
-
+                    </div>
+                    <div id="subheading">
+                        <h6>{{title}}</h6>
+                    </div>
+                    <a [routerLink]="['/managerlogin']">{{link1}}</a>
+                    <a [routerLink]="['/daycareregisteration']">{{link2}}</a>
+                    <a href="#">{{link3}}</a>
+                  </div>
                     
-                        <label><b>First Name*</b></label><br>
-                <input type="text" name="firstname"  [ngModel]="" #firstname="ngModel" [ngClass]="{'is-invalid':f.submitted && firstname.invalid}" required><br>
-              
-
-        <label><b>Last Name</b></label><br>
-                <input type="text" name="lastname"  [ngModel]="" #lastname="ngModel" [ngClass]="{'is-invalid':f.submitted && lastname.invalid}"   required><br>
-
-
-        <label><b>Work email?*</b></label><br>
-                       
-                <input type="text" name="email" [ngModel]="" #email="ngModel" [ngClass]="{'f-invalid':f.submitted&& email.invalid}"  required email><br>
+                         
+                <div [ngClass]="'image3'">
+                        <div [ngClass]="'division'">
+                                <div [ngClass]="'transparent'"></div>
+                                <p id="first"><b>Find your daycare on Babboo and create your</b></p>
+                                    <p id="first1"><b>account for free </b></p><br>
+                                    <p id="second">You're one step away from managing your daycare on Babboo.Please Complete</p><p id="second1">the following fields to help us verify your identity.Your personal  detail is safe</p> <p id="second2">and won't shared.</p>
+                                </div>
+                                <div [ngClass]="'column-form'">
+                                    <form [ngClass]="'form'" #f="ngForm" (ngSubmit)="f.valid&&saveData()">
+                                      
+                                                    
+                                                        <label><b>First Name*</b></label><br>
+                                                <input type="text" name="firstname"  [(ngModel)]="User.firstname" #firstname="ngModel" [ngClass]="{'is-invalid':f.submitted && firstname.invalid}" required><br>
+                                              
+                                
+                                        <label><b>Last Name</b></label><br>
+                                                <input type="text" name="lastname"  [(ngModel)]="User.lastname" #lastname="ngModel" [ngClass]="{'is-invalid':f.submitted && lastname.invalid}"   required><br>
+                                
+                                
+                                        <label><b>Work email?*</b></label><br>
+                                                       
+                                                <input type="text" name="email" [(ngModel)]="User.email" #email="ngModel" [ngClass]="{'f-invalid':f.submitted&& email.invalid}"  required email><br>
+                                            
+                                                    
+                                                    
+                                        <label><b>Password*</b></label><br>
+                                                <input type="password" name="password"   [(ngModel)]="User.password" #password="ngModel" [ngClass]="{'f-invlaid':f.submitted&&password.invalid}"  required minlength="6"><br>
+                                                      <div *ngIf="f.submitted&&password.invalid">
+                                                              <br><div id="errors1" *ngIf="password.errors.minlength">*Password must be at least 6 character* </div>
+                                                      </div>
+                                               
+                                                    
+                                        <label><b>Phone Number*</b></label><br>
+                                                <input type="text" name="phoneno" [(ngModel)]="User.phoneno" #phoneno="ngModel" [ngClass]="{'f-invalid':f.submitted&&phoneno.invalid}"  required><br>
+                                                   
+                                                <label><b>Job Position*</b></label><br>
+                                                <select id="jobpostition" name="jobpostition"  [(ngModel)]="JobPosition.jobpostition" >
+                                                        <option *ngFor="let item of Jobposition" [value]="item.jobid">{{item.jobname}}</option>
+                                                        </select><br> 
+                                                        
+                                                        <label><b>State*</b></label><br>
+                                                        <select id="state" name="state"  [(ngModel)]="State.state" >
+                                                                <option *ngFor="let item of state" [value]="item.stateid">{{item.statename}}</option>
+                                                                </select><br>
+                                                               
+                                                               
+                                                                <label><b>City*</b></label><br>
+                                                                <input type="text" name="city" #city="ngModel" [(ngModel)]="User.city" [ngClass]="{'f-invalid':f.submitted&&city.invalid}"  required><br>
+                                                                           
+                                      
+                                        
+                                        <button [ngClass]="'header2'"type="submit"><b>{{btn}}</b></button> 
+                                                     
+                                                </form>
+                                
+                                                        </div>
             
-                    
-                    
-        <label><b>Password*</b></label><br>
-                <input type="password" name="password"   [ngModel]="" #password="ngModel" [ngClass]="{'f-invlaid':f.submitted&&password.invalid}"  required minlength="6"><br>
-                      <div *ngIf="f.submitted&&password.invalid">
-                              <br><div id="errors1" *ngIf="password.errors.minlength">*Password must be at least 6 character* </div>
-                      </div>
-               
-                    
-        <label><b>Phone Number*</b></label><br>
-                <input type="text" name="phoneno" [ngModel]="" #phoneno="ngModel" [ngClass]="{'f-invalid':f.submitted&&phoneno.invalid}"  required><br>
-                   
+             
+                                                                    </div>
                 
-        <label><b>Job Position*</b></label><br>
-                <select>
-                <option *ngFor="let item of Jobposition">{{item}}</option>
-                </select><br>
-                   
-                
-        <label><b>Location*</b></label><br>
-                <input type="text" name="location" [ngModel]="" #location="ngModel" [ngClass]="{'f-invalid':f.submitted&&location.invalid}" required><br>
-                
-                
-        <label><b>State*</b></label><br>
-                <select>
-                <option *ngFor="let item of state">{{item}}</option>
-                </select><br>
-                
-                
-        <label><b>City*</b></label><br>
-        <input type="text" name="city" [ngModel]="" #city="ngModel" [ngClass]="{'f-invalid':f.submitted&&city.invalid}"  required><br>
-                   
-                
-                
-                
-        <input  id="terms" type="checkbox" name="isActive" #isActive="ngModel" [ngModel]="" [ngClass]="{'f-invalid':isActive.touched && isActive.invalid}" required><span>I confirm that I'm authorized employee and agree to vestigio<a href="#">Terms and Conditions.</a></span>
-
-        <div *ngIf="isActive.touched && isActive.errors.required">Our terms &condition required</div>
-               
         
-        
-        <button [ngClass]="'header2'"type="submit"><b>{{btn}}</b></button> 
-                     
-                </form>
-
-        </div>
         <div [ngClass]="'item5'">
-             <p><b>{{title1}} INDIA,</b>Greater Noida,Gautam Buddha University</p>
-              <div [ngClass]="'item7'">
-                    <a href="#">{{item75}}</a><br>
-                  <a href="#">{{item71}}</a><br>
-                  <a href="#">{{item72}}</a><br>
-                  <a href="#">{{item73}} </a><br>
-                  <a href="#">{{item74}}  </a><br>
-                  <a href="#">{{item76}} </a><br>
-                
-                <p id="footer"[ngStyle]="styleOne&&{'font-size': '8px'}">&copy;2019 vestigio All Right Reserved. </p>
-           
-            </div>
-        </div>
-        <div [ngClass]="'item6'">
-            <p id="heading6"><b>{{title1}}</b></p>
-        </div>
-
-    
+                                                <p><b>{{title1}} INDIA,</b>Greater Noida,Gautam Buddha University</p>
+                                                 <div [ngClass]="'item7'">
+                                                       <a href="#">{{item75}}</a><br>
+                                                     <a href="#">{{item71}}</a><br>
+                                                     <a href="#">{{item72}}</a><br>
+                                                     <a href="#">{{item73}} </a><br>
+                                                     <a href="#">{{item74}}  </a><br>
+                                                     <a href="#">{{item76}} </a><br>
+                                                   
+                                                   <p id="footer"[ngStyle]="styleOne&&{'font-size': '8px'}">&copy;2019 Babboo All Right Reserved. </p>
+                                              
+                                               </div>
+                                           </div>
+                                           <div [ngClass]="'item6'">
+                                               <p id="heading6"><b>{{title1}}</b></p>
+                                           </div>
+                                   
+                                           
+   

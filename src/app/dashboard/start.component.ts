@@ -1,20 +1,8 @@
-
-import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-
-/**
- * @title Stepper overview
- */
+import{Component} from "@angular/core";
 @Component({
     selector:"start",
-    templateUrl:"./start.component.html",
-    styleUrls:["./dashboard.component.css"]
+    templateUrl:"./start.component.html"
 })
-export class StartComponent {
- 
+export class StartComponent{
+    
 }
-
-
-/**  Copyright 2018 Google Inc. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license */

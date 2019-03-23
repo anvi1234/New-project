@@ -7,20 +7,28 @@ import{StartComponent} from "./start.component";
 import{SignUpComponent} from "../signup.component";
 import{ UserLoginComponent} from "../userlogin.component";
 import{DaycareManagerLogin} from "../registeration/managerlogin.component";
+import { MynavComponent } from "src/app/dashboard/mynav/mynav.component";
+import { UserProfileComponent } from "src/app/dashboard/userprofile/userprofile.component";
+
+
+
+
+
+
 
 
 export const routes:Routes=[
-     {path:"nextpage/:number",component:NextPage},
-    {path:"managerlogin",component:DaycareManagerLogin},
-    {path:"daycareregisteration",component:Registeration},
-    {path:"frontpage",component:FrontComponent},
-    { path: 'start', component: FrontComponent },
-    {path:"daycaremanager",component:DaycareManager},
-    {path:"signup",component:SignUpComponent},
-    {path:"dashboard",loadChildren:'src/app/dashboard/dashboard.module#DashBoardModule'},
-    {path: 'login', component: UserLoginComponent },
-  
-    { path: '**', component:FrontComponent },
+    {path:"nextpage/:number",component:NextPage},
+   {path:"managerlogin",component:DaycareManagerLogin},
+   {path:"daycareregisteration",component:Registeration},
+   {path:"frontpage",component:FrontComponent},
+   { path: 'start', component: FrontComponent },
+   {path:"daycaremanager",component:DaycareManager},
+   {path:"signup",component:SignUpComponent},
+   {path:"dashboard",loadChildren:'src/app/dashboard/dashboard.module#DashboardModule'},
+   {path: 'login', component: UserLoginComponent },
+ 
+   { path: '**', component:FrontComponent },
 
 ]
-    
+   
