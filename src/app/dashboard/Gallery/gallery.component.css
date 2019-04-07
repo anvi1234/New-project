@@ -1,0 +1,17 @@
+.mat-card{
+    height:550px;
+    width:500px;
+    margin-left:20px;
+    margin-top:20px;
+}
+.header2{
+    height: 50px;
+    width:80px;
+    background-color:#DB7093; 
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    left:50px;
+    top:28px;
+    border-bottom-color: beige;
+    }

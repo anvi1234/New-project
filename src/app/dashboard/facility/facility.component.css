@@ -1,0 +1,33 @@
+
+
+.mat-card{
+    min-height:300px;
+    width:500px;
+    margin-left:20px;
+    margin-top:90px;
+}
+.mat-form-field{
+    width:400px;
+    
+}
+#image1{
+    height:50px;
+    width:50px;
+}
+#image2{
+    height:50px;
+    width:50px;
+}
+.header2{
+    height: 30px;
+    width:50px;
+    background-color:#DB7093; 
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    left:300px;
+    top:10px;
+    border-bottom-color: beige;
+    }
+    
+    

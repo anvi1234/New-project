@@ -14,7 +14,7 @@ import{routes} from "./router/router.config";
 import{ UserLoginComponent} from "./userlogin.component";
 import{FormsModule, ReactiveFormsModule} from "@angular/forms";
 import{ DaycareManagerLogin} from "./registeration/managerlogin.component";
-import{DayCareComponent} from "./daycares/daycare.component";
+import{ ChildDayCareComponent} from "./daycares/daycare.component";
 import{PhotosComponent} from "./daycares/photos.component";
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import{SignUpComponent} from "./signup.component";
@@ -27,13 +27,14 @@ import { UserProfileComponent } from '../dashboard/userprofile/userprofile.compo
 import {MatFormFieldModule} from '@angular/material';
 import {MatInputModule} from '@angular/material';
 import { DaycareService } from '../daycare.service';
+import{FileSelectDirective} from "ng2-file-upload";
 
 
 
 @NgModule({
   declarations: [
-    FrontComponent ,
-    Registeration,DaycareManager,NextPage,StartComponent,SignUpComponent,UserLoginComponent,DaycareManagerLogin,DayCareComponent,PhotosComponent,ExtraComponent  ],
+    FrontComponent ,ChildDayCareComponent,FileSelectDirective,
+    Registeration,DaycareManager,NextPage,StartComponent,SignUpComponent,UserLoginComponent,DaycareManagerLogin,PhotosComponent,ExtraComponent  ],
   imports: [
     BrowserModule,NgbModule,SliderModule,BrowserAnimationsModule,MatCardModule, MatFormFieldModule,
   FlexLayoutModule,RouterModule.forRoot(routes),FormsModule, 

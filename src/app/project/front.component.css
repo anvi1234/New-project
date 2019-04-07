@@ -7,7 +7,8 @@ body{
 
 .search {
   width: 120%;
-  position: relative
+  position: relative;
+  bottom:90px;
 }
 
 .searchTerm {
@@ -39,6 +40,9 @@ body{
   font-size: 20px;
 }
 
+
+
+
 /*Resize the wrap to see the search bar change!*/
 .wrap{
   width: 30%;
@@ -47,44 +51,26 @@ body{
   left: 47%;
   transform: translate(-50%, -50%);
 }
-.vestigio-heading header h1,h2, h3{
-   
-  font-size: 150px;
-  font-weight: 5000;
- top: 150px;
-  display:inline;
-position: relative;
-left: 590px;
- font-family:Gill Sans Extrabold, sans-serif;
-}
-.vestigio-heading header h2, h3{
-   
-  font-size: 150px;
-  font-weight: 5000;
- top: 150px;
-  display:inline;
-position: relative;
-left: 590px;
- font-family:Gill Sans Extrabold, sans-serif;
-}
-.vestigio-heading header h3{
-   
-  font-size: 150px;
-  font-weight: 5000;
- top: 150px;
-  display:inline;
-position: relative;
-left: 590px;
- font-family:Gill Sans Extrabold, sans-serif;
-}
+p.text-center
+ { color: #DB7093;font-weight:bold;font-family:Gill Sans Extrabold, sans-serif;;font-size:60px }
 
-.paragraph p{
+span.name 
+{ color:#FF7F50;font-weight:bold;font-family:Gill Sans Extrabold, sans-serif;font-size:60px }
+span.name2
+{ color:#368BC1;font-weight:bold;font-family:Gill Sans Extrabold, sans-serif;font-size:60px }
+
+.container-fluid p{
+  padding-top:90px;
+  
+}
+.text-center{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: #696969;
   position: relative;
-  left:500px;
-  top:155px;
+  bottom:40px;
+  
+  
  
 }
 #p2{
@@ -101,23 +87,19 @@ left: 590px;
   color: black;
 }
 
-#image{
+img{
   position: relative;
-  bottom:140px;
+  bottom:160px;
+ right:100px;
+ height:"550px";
+ width: "550px";
 }
 .topnav2 {
   background-color:white;
   overflow: hidden;
 }
 
-.column-vestigio2 h1,h2,h3{
-  position: relative;
-  top:10px;
-}
-.column-vestigio2 h1{
-  position: relative;
-  left:590px;
-}
+
 .column-grey{
    background-color: #DCDCDC;
    height:800px;

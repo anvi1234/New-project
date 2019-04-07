@@ -1,35 +1,93 @@
 <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
 
  
-<div class="nav">
-   <nav>
-      <a [routerLink]="['/signup']">{{title1}}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a [routerLink]="['/login']" >{{title2}}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       <a [routerLink]="['/daycareregisteration']">{{title3}}</a>
-   </nav>
-</div>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+
+          <a [routerLink]="['/daycareregisteration']"style="color:black;text-align:right">{{title3}}</a>
+        </li>
+        </ul>
+        </div>
+      </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+            <div class="container-fluid">
+              
+        <p class="text-center">Ba<span class="name">bb</span><span class="name2">oo</span> </p>
+           <div class="text-center">
+            Find your ideal daycare and compare governance on a single websites.</div>
+      
+   </div>
+   <div class="container fixed-center">
+         <div class="wrap">
+               <div class="search">
+                  <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                  <button type="submit" value="Search" class="searchButton">
+                     <b> Search</b>
+                 </button>
+               </div>
+            </div>
+         
+         
+         
+               <img src="assets/image/child3.png" height="400px" width="400px">
+            </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
   
-<div [ngClass]="'vestigio-heading'">
-   <header>
-        <h1 style="text-align:center;float:center;color: #DB7093;font-size:60px;"><b>Ba</b></h1> 
-        <h2 style="text-align:center;float:center;color:#FF7F50;font-size:60px"><b>bb</b></h2>
-        <h3 style="text-align:center;float:center;color:#368BC1;font-size:60px"><b>oo</b></h3>
-      </header>
-</div>
-
-   <div class="paragraph">
-      <p>Find your ideal daycare and compare governance </p><p id="p2">on a single websites.</p>
-   </div>
-
-
-<div class="wrap">
-    <div class="search">
-       <input type="text" class="searchTerm" placeholder="What are you looking for?">
-       <button type="submit" value="Search" class="searchButton">
-          <b> Search</b>
-      </button>
-    </div>
- </div>
- <div id="image">
-      <img src="assets/image/child3.png" height="500px" width="500px">
-   </div>

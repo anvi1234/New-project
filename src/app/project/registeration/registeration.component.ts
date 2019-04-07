@@ -15,9 +15,9 @@ export class Registeration {
     link1="Call Us";
     link2="Register";
     link3="Sign in";
-    h1="ves";
-    h2="ti";
-    h3="gio";
+    h1="Ba";
+    h2="bb";
+    h3="oo";
     btn="Start now";
     title4="Start with the details";
     constructor(private routes:Router,private route:ActivatedRoute){}

@@ -1,0 +1,27 @@
+<mat-card>
+
+    <div class="example-container">
+        <mat-form-field>
+            <input matInput placeholder="Daycare Name" name="User.daycarename" [(ngModel)]="User.daycarename" #daycarename="ngModel">
+          </mat-form-field><br>
+          <mat-form-field>
+            <input matInput placeholder="Location(Gamma 1-Greater, Noida - 201310)" name="User.keylocation" [(ngModel)]="User.keylocation" #keylocation="ngModel">
+          </mat-form-field><br>
+          <mat-form-field>
+            <input matInput placeholder="Top three facility separate with ," name="User.facility" [(ngModel)]="User.facility" #facility="ngModel">
+          </mat-form-field>
+          <mat-form-field>
+            <img [src]="image2"  height="100px" width="100px"  id="image1" style="cursor:pointer">
+            <div class="upload-btn">
+              <input  type="file" #Image accept="image/*" id="image2" (change)="handleFileInput($event.target.files)">
+            </div>
+          </mat-form-field>
+          <button [ngClass]="'header2'" type="submit" value="submit" (click)="saveData()"><b>OK</b></button>
+      
+      <mat-form-field>
+        <input matInput placeholder="Location(Detail)" name="User.location" [(ngModel)]="User.location" #location="ngModel">
+      </mat-form-field><br>
+      <button [ngClass]="'header2'" type="submit" value="submit" (click)="saveData()">OK</button>
+      </div>
+      <img [src]="image2" height="30px" width="40px">
+    </mat-card>

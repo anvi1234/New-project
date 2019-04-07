@@ -1,17 +1,90 @@
 
 
-<mat-card>
 
-  <div class="example-container">
-    <mat-form-field>
-      <input matInput placeholder="Daycare Name">
-    </mat-form-field>
-  
-   
-   
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.rawgit.com/download/glyphicons/3.3.7/glyphicons.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+<mat-card class="matcard2">
+<form [formGroup]="UserForm">
+    <div class="example-container">
+        <mat-form-field>
+        <input matInput placeholder="Daycarename"  >
+      </mat-form-field><br>
+     
+        <mat-form-field>
+            <input matInput placeholder="Place-Mark(Greater Noida,Near ATS Pardiso Society)" name="User.keylocation" >
+          </mat-form-field><br>
+          <mat-form-field>
+                <input matInput placeholder="Location" name="User.location" >
+              </mat-form-field><br>
+              <mat-form-field>
+                    <input matInput placeholder="Facility(top three )" name="User.facility">
+                  </mat-form-field><br>
+     
+ <fieldset><legend>Facility |<span class="glyphicon glyphicon-plus" (click)="addExtra()"></span></legend></fieldset>
+ <mat-form-field>
+   <div class="input-group" *ngFor="let extraControl of UserForm.get('extra').controls;let i=index"> 
+   <input matInput type="text" class="form-control" [formControlName]="i" placeholder="extra facility">
+   <span class="input-group-addon glyphicon glyphicon-trash" (click)="Deleteextra(i)"></span>
   </div>
-</mat-card>
+      </mat-form-field><br>
+      <p style="color:gray">Building Image </p>
+      <img [src]="imageUrl"   id="image1" style="cursor:pointer">
+      <div class="upload-btn">
+      <input type="file" accept="image/*" (change)="handleFileInput($event.target.result)" >
+      </div>
+      <p style="color:gray">Captivating Images</p>
+      <input type='file' (change)="onSelectFile($event)" multiple>
+      <button [ngClass]="'header2'" type="submit" value="submit" (click)="saveData()">Ok</button>
+      
+      <button [ngClass]="'header2'" type="submit" value="submit" (click)="saveData()">Ok</button>
+    </div>
+    
 
- 
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
+
+         
+
+
+
+

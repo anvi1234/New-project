@@ -9,6 +9,8 @@ import{ UserLoginComponent} from "../userlogin.component";
 import{DaycareManagerLogin} from "../registeration/managerlogin.component";
 import { MynavComponent } from "src/app/dashboard/mynav/mynav.component";
 import { UserProfileComponent } from "src/app/dashboard/userprofile/userprofile.component";
+import { DayCareComponent } from "day-care/src/app/project/daycares/daycare.component";
+import { ChildDayCareComponent } from "../daycares/daycare.component";
 
 
 
@@ -18,9 +20,10 @@ import { UserProfileComponent } from "src/app/dashboard/userprofile/userprofile.
 
 
 export const routes:Routes=[
-    {path:"nextpage/:number",component:NextPage},
+    {path:"nextpage",component:ChildDayCareComponent},
    {path:"managerlogin",component:DaycareManagerLogin},
    {path:"daycareregisteration",component:Registeration},
+  
    {path:"frontpage",component:FrontComponent},
    { path: 'start', component: FrontComponent },
    {path:"daycaremanager",component:DaycareManager},

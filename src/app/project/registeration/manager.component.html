@@ -50,12 +50,12 @@
                                                 <input type="text" name="phoneno" [(ngModel)]="User.phoneno" #phoneno="ngModel" [ngClass]="{'f-invalid':f.submitted&&phoneno.invalid}"  required><br>
                                                    
                                                 <label><b>Job Position*</b></label><br>
-                                                <select id="jobpostition" name="jobpostition"  [(ngModel)]="JobPosition.jobpostition" >
+                                                <select id="jobpostition" name="jobpostition"  [(ngModel)]="jobpostition" >
                                                         <option *ngFor="let item of Jobposition" [value]="item.jobid">{{item.jobname}}</option>
                                                         </select><br> 
                                                         
                                                         <label><b>State*</b></label><br>
-                                                        <select id="state" name="state"  [(ngModel)]="State.state" >
+                                                        <select id="state" name="state"  [(ngModel)]="state" >
                                                                 <option *ngFor="let item of state" [value]="item.stateid">{{item.statename}}</option>
                                                                 </select><br>
                                                                

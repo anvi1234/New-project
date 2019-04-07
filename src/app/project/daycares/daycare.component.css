@@ -13,13 +13,16 @@
      padding:0px;
 
    }  
-    
-  .nav a{
-    position: relative;
-    left:1000px;
-    color:black;
-    top:10px;
-  }
+    .nav-link{
+      position: relative;
+      left:790px;
+     color: #000;
+    }
+   .text-center{
+     position: relative;
+     left:590px;
+    }
+   
   .nav2 .location-header .link-3{
     color:gray;
     position: relative;
@@ -33,24 +36,28 @@
     left:240px;
 
   }
+ 
+  
+
+  p.text-center
+ { color: #DB7093;font-weight:bold;font-family:Gill Sans Extrabold, sans-serif;font-size:40px }
+
+span.name 
+{ color:#FF7F50;font-weight:bold;font-family:Gill Sans Extrabold, sans-serif;font-size:40px }
+span.name2
+{ color:#368BC1;font-weight:bold;font-family:Gill Sans Extrabold, sans-serif;font-size:40px }
+  
   #hr3{
     position: relative;
     top:-28px;
   }
-  .column-vestigio2 h1,h2,h3{
-    position: relative;
-    bottom:15px;
-  }
-  .column-vestigio2 h1,h2,h3{
-    position: relative;
-    left:590px;
-  }
+  
   .column-darkgrey{
     background-color:#EEEEEE;
     height:150px;
     width: 1380px;
     position: relative;
-    top:28px;
+   
  }
  .search {
   width: 220%;
@@ -97,11 +104,12 @@
 }
 .column-grey{
   background-color:#E5E5E5;
-  height:2050px;
-  width: 1380px;
+  min-height:2000px;
+  min-width: 1400px;
   position: relative;
-  top:148px;
+ 
 }
+
 #white{
   background-color: white;
   height:220px;
@@ -110,7 +118,10 @@
   position: relative;
 
 }
-  
+
+  .col-md-2{
+    background-color: white;
+  }
 
 .imagedaycare{
   position: relative;
@@ -118,6 +129,11 @@
   top:2px;
   bottom:2px;
 
+
+}
+.container{
+  background-color: white;
+  width:auto;
 }
 .image{
   position: relative;

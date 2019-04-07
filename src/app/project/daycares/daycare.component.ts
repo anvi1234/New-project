@@ -1,16 +1,19 @@
 import{Component} from "@angular/core";
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
-
+import { DaycareService } from "src/app/daycare.service";
+import { User } from "src/app/dashboard/dashboard.model";
 
 @Component({
     selector:"daycare-page",
     templateUrl:"./daycare.component.html",
     styleUrls: ["./daycare.component.css"]
 })
-export class DayCareComponent{
+export class ChildDayCareComponent{
     title1="Sign Up";
     title2="Log Out";
    title3= "Register";
+   User:User=new User;
+   userData = [];
    h1="Ba";
     h2="bb";
     h3="oo";
@@ -57,6 +60,7 @@ export class DayCareComponent{
    
   
     private active:boolean = false;
+    userService: any;
       
 ngOnInit(){
     
@@ -203,7 +207,7 @@ ngOnInit(){
 
 
 
-constructor(config: NgbCarouselConfig) {
+constructor(config: NgbCarouselConfig,private service: DaycareService) {
     // customize default values of carousels used by this component tree
     config.interval=2000;
     config.wrap = true;
@@ -249,7 +253,16 @@ constructor(config: NgbCarouselConfig) {
     "header-box":true,
 
 }
-
+getAllData() {
+    this.userService.getAllData(this.User).subscribe(x => {
+        if (x.userResponse.message == "success") {
+            this.userData = x.userResponse.userData;
+        }
+        else {
+            alert(x.userResponse.message);
+        }
+    })
+}
 }
 
 

@@ -1,0 +1,59 @@
+
+<script src="https://cdn.rawgit.com/download/glyphicons/3.3.7/glyphicons.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+<mat-card class="matcard2">
+<form [formGroup]="UserForm" (ngSubmit)="saveData()">
+    <div class="example-container">
+        <mat-form-field>
+        <input matInput placeholder="Daycarename" class="form-control" formControlName="daycarename" [(ngModel)]="User.daycarename" >
+      </mat-form-field><br>
+      <mat-form-field>
+          <input matInput placeholder="Facility(top three )" class="form-control" formControlName="facility"  [(ngModel)]="User.facility" >
+  
+        </mat-form-field><br>
+        <mat-form-field>
+            <input matInput placeholder="2" class="form-control"formControlName="facility2"  [(ngModel)]="User.facility2" >
+    
+          </mat-form-field><br>
+          <mat-form-field>
+              <input matInput placeholder="3" class="form-control"formControlName="facility3"  [(ngModel)]="User.facility3"  >
+      
+            </mat-form-field><br>
+           
+
+        <p style="color:gray"><strong>ExtraFacility |</strong><span class="glyphicon glyphicon-plus" (click)="addExtra()"></span></p>
+      <mat-form-field>
+        <div class="input-group" *ngFor="let extraControl of UserForm.get('extra').controls;let extrafacility=index"> 
+        <input matInput type="text" class="form-control"  placeholder="extra facility"  formControlName="extrafacility"  [(ngModel)]="User.extrafacility"  >
+        <span class="input-group-addon glyphicon glyphicon-trash" (click)="Deleteextra(extrafacility)"></span>
+       </div>
+           </mat-form-field><br>
+        <mat-form-field>
+            <input matInput placeholder="Place-Mark(Greater Noida,Near ATS Pardiso Society)"  formControlName="keylocation" [(ngModel)]="User.keylocation"  >
+          </mat-form-field><br>
+          <mat-form-field>
+                <input matInput placeholder="Location"  formControlName="location" [(ngModel)]="User.location"  >
+              </mat-form-field><br>
+            
+ 
+      <p style="color:gray;padding-top:40px;">Building Image </p>
+  
+     
+         
+      <input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
+      <button type="button" (click)="upload()">Upload</button>
+      <p style="color:gray;padding-top:40px;">Captivating Images</p>
+      <input type='file' (change)="onSelectFile($event)" multiple>
+      <button [ngClass]="'header2'" type="submit" value="submit" [disabled]="!UserForm.valid">Ok</button>
+      
+      </div>
+    
+
+
+    </form>
+
+
+
+
+

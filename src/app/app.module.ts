@@ -8,13 +8,14 @@ import{ApComponent} from "./app.component";
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MynavComponent } from './dashboard/mynav/mynav.component';
+import { DayCareComponent } from 'day-care/src/app/project/daycares/daycare.component';
 
 
 
 @NgModule({
   declarations: [
     ApComponent,
-    MynavComponent,
+    MynavComponent
    
    
     

@@ -16,5 +16,10 @@ export class DaycareService {
      return y;
     }))
   }
+  getAllData():any{
+    return this.http.get(this.Url+'getAllUser').pipe(map(x=>{
+      return x;
+    }))
+  }
 
 }
